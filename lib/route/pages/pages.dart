@@ -12,4 +12,18 @@ class Pages {
   static const String testModel = "/testModel";
   static const String testOverlay = "/testOverlay";
   static const String handleStatusBar = "/HandleStatusBar";
+  static const String listWithAlignment = "/listWithAlignment";
+  static const String webView = "/webView";
+  static const String qrCodeViewTest = "/qrCodeViewTest";
+  static const String pinCodeView = "/pinCodeView";
+  static const String passcodeScreen = "/passcodeScreen";
+  static const String pinCode = "/pinCode";
+  static const String qrTesting = "/qrTesting";
+  static const String flash = "/flash";
+  static const String weather = "/weather";
+  static const String materialThree = "/materialThree";
+  static const String profileView = "/profile-view";
+  static const String profileDetail = "/profile-detail";
+  static const String todos = "/todos";
+  static const String writeDetail = "/write-detail";
 }

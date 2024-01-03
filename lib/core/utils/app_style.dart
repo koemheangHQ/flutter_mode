@@ -29,12 +29,12 @@ class AppStyle {
             fontSize: 18.0,
             color: ColorConstant.primaryTextColor),
       ),
-      textTheme: _textTheme,
+      textTheme: textTheme,
       canvasColor: Colors.transparent,
     );
   }
 
-  static const TextTheme _textTheme = TextTheme(
+  static const TextTheme textTheme = TextTheme(
     displayLarge: TextStyle(
         fontWeight: _regular,
         fontSize: 96.0,
