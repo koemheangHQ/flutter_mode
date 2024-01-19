@@ -1,6 +1,9 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:fluuter_model/app/modules/profile/widget/widget.dart';
+import 'package:fluuter_model/route/pages/pages.dart';
+import 'package:fluuter_model/route/routes/routes.dart';
+import 'package:get/get.dart';
 
 class SliverAppBarB extends SliverPersistentHeaderDelegate {
   final bottomHeight = 60;
@@ -36,7 +39,9 @@ class SliverAppBarB extends SliverPersistentHeaderDelegate {
               SizedBox(
                 height: 35.0,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed(Pages.profileEdit);
+                  },
                   style: TextButton.styleFrom(
                     side: const BorderSide(
                         color: ColorConstant.danger, width: 1.2),
@@ -99,7 +104,9 @@ class SliverAppBarB extends SliverPersistentHeaderDelegate {
                 height: 38.0,
                 background: ColorConstant.white.withOpacity(0.3),
                 iconData: const Icon(Icons.more_vert),
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed(Pages.audioView);
+                },
               ),
             ],
           ),

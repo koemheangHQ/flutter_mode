@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:fluuter_model/app/modules/audio/view/audio_view.dart';
 import 'package:fluuter_model/app/modules/auth/binding/auth_binding.dart';
 import 'package:fluuter_model/app/modules/auth/view/auth.dart';
 import 'package:fluuter_model/app/modules/dashboard/view/dashboard.dart';
+import 'package:fluuter_model/app/modules/gemini/binding/gemini_binding.dart';
+import 'package:fluuter_model/app/modules/gemini/view/gemini_view.dart';
 import 'package:fluuter_model/app/modules/profile/binding/profile_binding.dart';
 import 'package:fluuter_model/app/modules/profile/view/profile_detail.dart';
+import 'package:fluuter_model/app/modules/profile/view/profile_edit.dart';
 import 'package:fluuter_model/app/modules/profile/view/profile_view.dart';
 import 'package:fluuter_model/app/modules/todo/binding/todo_binding.dart';
 import 'package:fluuter_model/app/modules/todo/view/detail_write.dart';
@@ -121,6 +125,28 @@ class Routes {
       page: () => const DetailWrite(),
       transition: Transition.noTransition,
       binding: TodoBinding(),
+    ),
+    GetPage(
+      name: Pages.profileDetail,
+      page: () => const ProfileDetail(),
+      transition: Transition.noTransition,
+      binding: TodoBinding(),
+    ),
+    GetPage(
+      name: Pages.gemini,
+      page: () => const GeminiView(),
+      transition: Transition.noTransition,
+      binding: GeminiBinding(),
+    ),
+    GetPage(
+      name: Pages.profileEdit,
+      page: () => const ProfileEdit(),
+      transition: Transition.noTransition,
+    ),
+    GetPage(
+      name: Pages.audioView,
+      page: () => const AudioSoundView(),
+      transition: Transition.noTransition,
     ),
   ];
   static GetPage unknownRoute = GetPage(

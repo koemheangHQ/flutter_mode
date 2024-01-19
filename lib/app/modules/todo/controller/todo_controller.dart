@@ -33,7 +33,11 @@ class TodosController extends GetxController {
     update();
   }
   removeContainerCard() {
-    widgetList.removeLast();
+    if(widgetList.isNotEmpty){
+      widgetList.removeLast();
+      update();
+    }
+    //widgetList.removeLast();
     update();
   }
   void add(TodoResponse todo) {

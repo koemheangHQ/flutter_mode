@@ -26,4 +26,7 @@ class Pages {
   static const String profileDetail = "/profile-detail";
   static const String todos = "/todos";
   static const String writeDetail = "/write-detail";
+  static const String gemini = "/gemini";
+  static const String profileEdit = "/profile-edit";
+  static const String audioView = "/audio-view";
 }

@@ -181,8 +181,8 @@ class LoginPage extends GetView<AuthController> {
                   labelStatus: "Submit",
                   height: AppHeight.h45,
                   onTap: () {
-                    Get.toNamed(Pages.todos);
-                    // Get.toNamed(Pages.profileView);
+                    Get.toNamed(Pages.profileView);
+                    // Get.toNamed(Pages.gemini);
                   },
                 ),
               ),
